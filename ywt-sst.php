@@ -9,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       YesWeTrack SST
  * Description:       Enhance conversion tracking by implementing server-side tagging using server Google Tag Manager container. Effortlessly configure data layer events in web GTM, send webhooks, set up custom loader, and extend cookie lifetime.
- * Version:           1.0
+ * Version:           1.1.0
  * Author:            YesWeTrack
  * Author URI:        https://yeswetrack.com/
  * License:           GPL-2.0+
@@ -27,6 +27,7 @@ require plugin_dir_path( __FILE__ ) . 'bootstrap.php';
 
 register_activation_hook( __FILE__, array( YWT_SST_Plugin_Activate::class, 'instance' ) );
 
+add_action( 'init', array( YWT_SST_Plugin_Updater::class, 'instance' ) );
 add_action( 'init', array( YWT_SST_Plugin_Upgrade::class, 'instance' ) );
 add_action( 'ywt_sst', array( YWT_SST_I18n::class, 'instance' ) );
 add_action( 'ywt_sst', array( YWT_SST_Webhook_Purchase::class, 'instance' ) );
