@@ -21,16 +21,16 @@ class YWT_SST_Plugin_Upgrade {
 	 * @return void
 	 */
 	public function init() {
-		$this->upgrade_1_0_0();
+		$this->upgrade_2_0_0();
 	}
 
 	/**
-	 * Upgrade to version 1.0.0.
+	 * Upgrade to version 2.0.0.
 	 *
 	 * @return void
 	 */
-	private function upgrade_1_0_0() {
-		if ( version_compare( get_option( YWT_SST_FIELD_VERSION, '0.0.1' ), '1.0.0', '>=' ) ) {
+	private function upgrade_2_0_0() {
+		if ( version_compare( get_option( YWT_SST_FIELD_VERSION, '1.1.4' ), '2.0.0', '>=' ) ) {
 			return;
 		}
 
@@ -60,6 +60,6 @@ class YWT_SST_Plugin_Upgrade {
 			delete_option( 'ywt-sst-admin-options' );
 		}
 
-		update_option( YWT_SST_FIELD_VERSION, '1.0.0', false );
+		update_option( YWT_SST_FIELD_VERSION, '2.0.0', false );
 	}
 }

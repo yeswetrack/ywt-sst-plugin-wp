@@ -3,7 +3,7 @@ Contributors: Lester Visser
 Tags: google tag manager, google tag manager server side, gtm, gtm server side, tag manager, tagmanager, analytics, google, serverside, server-side, gtag
 Requires at least: 5.2.0
 Tested up to: 6.4.0
-Stable tag: 1.1.0
+Stable tag: 2.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,8 +17,6 @@ YesWeTrack server side tracking plugin for woocommerce
 
 
 == Changelog ==
-= 1.1.0 =
-* Added update checker
 
 = 1.0.0 =
 * Init release.
