@@ -15,13 +15,14 @@
  class YWT_SST_Plugin_Updater {
 	use YWT_SST_Singleton;
 
+
     /**
 	 * Init.
 	 *
 	 * @return void
 	 */
 	public function init() {
-        $updater = new YWT_Plugin_Updater( __FILE__ );
+        $updater = new YWT_Plugin_Updater( plugin_dir_path( __DIR__ ) . 'ywt-sst.php');
         $updater->set_username( 'yeswetrack' );
         $updater->set_repository( 'ywt-sst-plugin-wp' );
         $updater->initialize();
