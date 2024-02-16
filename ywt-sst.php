@@ -10,7 +10,7 @@
  * Plugin Name:       YesWeTrack SST
  * Plugin URI:        https://github.com/yeswetrack/ywt-sst-plugin-wp/
  * Description:       Enhance conversion tracking by implementing server-side tagging using server Google Tag Manager container. Effortlessly configure data layer events in web GTM, send webhooks, set up custom loader, and extend cookie lifetime.
- * Version:           1.3.0
+ * Version:           1.5.0
  * Author:            YesWeTrack
  * Author URI:        https://yeswetrack.com/
  * License:           GPL-2.0+
